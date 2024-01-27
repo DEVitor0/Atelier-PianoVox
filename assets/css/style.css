@@ -153,3 +153,50 @@ body > nav > ul > li:nth-child(3) {
     background-color: black;
 }
 
+#detalhes-curso {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #ddd; 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; 
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 16px; 
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}

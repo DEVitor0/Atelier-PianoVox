@@ -8,27 +8,28 @@ hamburgerBtn.addEventListener('click', function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     const carousel = document.querySelector(".carousel");
-    const slides = document.querySelectorAll(".slide");
     const prevButton = document.getElementById("prev");
     const nextButton = document.getElementById("next");
 
-    let currentIndex = 0;
-
-    function updateCarousel() {
-        const newTransformValue = -currentIndex * 100 + "%";
-        carousel.style.transform = "translateX(" + newTransformValue + ")";
-    }
-
     function showNextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
-        updateCarousel();
+        const firstSlide = carousel.firstElementChild;
+        const newSlide = firstSlide.cloneNode(true);
+        carousel.appendChild(newSlide);
+        carousel.removeChild(firstSlide);
     }
 
     function showPrevSlide() {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-        updateCarousel();
+        const lastSlide = carousel.lastElementChild;
+        const newSlide = lastSlide.cloneNode(true);
+        carousel.insertBefore(newSlide, carousel.firstElementChild);
+        carousel.removeChild(lastSlide);
     }
 
-    prevButton.addEventListener("click", showPrevSlide);
-    nextButton.addEventListener("click", showNextSlide);
+    prevButton.addEventListener("click", function () {
+        showPrevSlide();
+    });
+
+    nextButton.addEventListener("click", function () {
+        showNextSlide();
+    });
 });

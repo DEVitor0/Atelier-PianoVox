@@ -34,3 +34,35 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const menuItems = document.querySelectorAll('.menu-list li');
+
+    menuItems.forEach((item, index) => {
+        item.addEventListener('click', function (e) {
+            e.preventDefault();
+            scrollToElement(index);
+        });
+    });
+
+    function scrollToElement(index) {
+        const contentElements = document.querySelectorAll('section > div');
+        const targetElement = contentElements[index];
+
+        if (targetElement) {
+            const navHeight = document.querySelector('header').offsetHeight;
+
+            let extraOffset = 0;
+
+            if (index === 2) { 
+                extraOffset = -400; 
+            } else if (index === 3) { 
+                extraOffset = window.innerHeight = -600;
+            }
+
+            window.scrollTo({
+                top: targetElement.offsetTop - navHeight - extraOffset,
+                behavior: 'smooth'
+            });
+        }
+    }
+});

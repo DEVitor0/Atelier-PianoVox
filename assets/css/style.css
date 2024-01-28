@@ -177,11 +177,13 @@ body > nav > ul > li:nth-child(3) {
 img {
     max-width: 100%;
     height: auto;
-    max-height: 200px; 
+    max-height: 200px;
+    padding-top: 35px;
 }
 
 h2 {
     margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .arrow {

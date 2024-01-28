@@ -11,25 +11,26 @@ document.addEventListener("DOMContentLoaded", function () {
     const prevButton = document.getElementById("prev");
     const nextButton = document.getElementById("next");
 
+
     function showNextSlide() {
         const firstSlide = carousel.firstElementChild;
-        const newSlide = firstSlide.cloneNode(true);
-        carousel.appendChild(newSlide);
-        carousel.removeChild(firstSlide);
+        carousel.appendChild(firstSlide);
     }
+
 
     function showPrevSlide() {
         const lastSlide = carousel.lastElementChild;
-        const newSlide = lastSlide.cloneNode(true);
-        carousel.insertBefore(newSlide, carousel.firstElementChild);
-        carousel.removeChild(lastSlide);
+        carousel.insertBefore(lastSlide, carousel.firstElementChild);
     }
+
 
     prevButton.addEventListener("click", function () {
         showPrevSlide();
     });
 
+
     nextButton.addEventListener("click", function () {
         showNextSlide();
     });
 });
+

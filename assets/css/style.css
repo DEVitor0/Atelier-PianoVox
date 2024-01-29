@@ -93,12 +93,12 @@ header {
 
 
 #hamburger-btn.active span:nth-child(1) {
-  transform: translateY(9px) rotate(50deg);
+  transform: translateY(10px) rotate(50deg);
 }
 
 
 #hamburger-btn.active span:nth-child(3) {
-  transform: translateY(-9px) rotate(-50deg);
+  transform: translateY(-15px) rotate(-50deg);
 }
 
 

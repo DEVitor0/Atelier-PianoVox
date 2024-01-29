@@ -68,8 +68,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 30px;
-  height: 20px;
+  width: 50px; /*!Problema de CSS no menu aqui*/
+  height: 40px; /*!Problema de CSS no menu aqui*/
   background: transparent;
   border: none;
   cursor: pointer;
@@ -137,70 +137,70 @@ body > nav > ul > li:nth-child(3) {
 }
 
 .titulo {
-    width: 100%;
-    height: 130px;
+  width: 100%;
+  height: 130px;
 }
 
 .titulo > h1 {
-    width: 390px;
-    padding-left: 30px;
-    font-size: 28px;
+  width: 280px; /*!Correção de width aqui*/
+  padding-left: 30px;
+  font-size: 28px;
 }
 
 .titulo > div {
-    width: 100px;
-    height: 3px;
-    background-color: black;
+  width: 100px;
+  height: 3px;
+  background-color: black;
 }
 
 #detalhes-curso {
-    position: relative;
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
 
 .carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
 .slide {
-    min-width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    background-color: #ddd; 
-    border-radius: 10px; 
-    overflow: hidden; 
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #ddd; 
+  border-radius: 10px; 
+  overflow: hidden; 
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    max-height: 200px;
-    padding-top: 35px;
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  padding-top: 35px;
 }
 
 h2 {
-    margin-top: 10px;
-    margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .arrow {
-    position: absolute;
-    top: 50%;
-    font-size: 16px; 
-    color: black;
-    border: none;
-    cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 16px; 
+  color: black;
+  border: none;
+  cursor: pointer;
 }
 
 #prev {
-    left: 10px;
+  left: 10px;
 }
 
 #next {
-    right: 10px;
+  right: 10px;
 }
 
 .container-professores {

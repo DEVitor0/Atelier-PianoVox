@@ -1,0 +1,44 @@
+header {
+    height: 650px;
+}
+
+#hamburger-btn {
+    display: none;
+}
+
+.mobile-nav {
+    background-color: black;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: black;
+    position: static;
+    width: 80%;
+    height: 100%;
+}
+
+.menu-list li {
+    display: flex;
+    color: white;
+}
+
+.menu-list > li > .material-symbols-outlined {
+    display: none;
+}
+
+.menu-list > li > span {
+    font-size: 20px;
+}
+
+body > header > nav > ul > li:nth-child(1) > span:nth-child(2) {
+    padding-left: 0px;
+}
+
+body > header > nav > ul > li:nth-child(4) > span:nth-child(2) {
+    padding-left: 0;
+}
+

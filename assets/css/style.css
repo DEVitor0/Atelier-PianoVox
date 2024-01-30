@@ -1,30 +1,30 @@
 @font-face {
-    font-family: 'font-logo';
-    src: url("../font/FjallaOne-Regular.ttf");
+  font-family: 'font-logo';
+  src: url("../font/FjallaOne-Regular.ttf");
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    font-family: 'font-logo';
+  padding: 0;
+  margin: 0;
+  font-family: 'font-logo';
 }
 
 header {
-    height: 450px;
-    width: 100%;
-    background-image: url("../img/piano-inicial.jpg");
-    background-size: cover;
-    background-position: center;
+  height: 450px;
+  width: 100%;
+  background-image: url("../img/piano-inicial.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .mobile-nav {
-    width: 100vw;
-    height: 7vh;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow-y: hidden;
+  width: 100vw;
+  height: 7vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-y: hidden;
 }
 
 .menu-list {
@@ -38,7 +38,6 @@ header {
   right: 20px;
   background-color: white;
   color: black;
-  font-family: '';
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   z-index: 1;

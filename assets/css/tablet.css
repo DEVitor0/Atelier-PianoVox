@@ -2,12 +2,26 @@ header {
     height: 650px;
 }
 
+nav > div:nth-child(1n) {
+    height: 80%;
+    width: 130px;
+    background-image: url("../img/logo.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+nav > div:nth-child(1n) > img {
+    display: none;
+}
+
 #hamburger-btn {
     display: none;
 }
 
 .mobile-nav {
-    background-color: black;
+    background-color: transparent;
 }
 
 .menu-list {
@@ -16,9 +30,11 @@ header {
     align-items: center;
     flex-direction: row;
     background-color: black;
+    border-radius: 10px;
     position: static;
     width: 80%;
-    height: 100%;
+    height: 80%;
+    margin-right: 10px;
 }
 
 .menu-list li {
@@ -27,18 +43,12 @@ header {
 }
 
 .menu-list > li > .material-symbols-outlined {
-    display: none;
+    font-size: 24px;
+    padding-right: 3px;
+    padding-left: 0;
 }
 
 .menu-list > li > span {
     font-size: 20px;
-}
-
-body > header > nav > ul > li:nth-child(1) > span:nth-child(2) {
-    padding-left: 0px;
-}
-
-body > header > nav > ul > li:nth-child(4) > span:nth-child(2) {
-    padding-left: 0;
 }
 

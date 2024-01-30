@@ -52,3 +52,28 @@ nav > div:nth-child(1n) > img {
     font-size: 20px;
 }
 
+.titulo {
+    height: 130px; /*!Ajustar altura mais tarde*/
+}
+
+.titulo > h1 {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.titulo > div {
+    margin: auto;
+    width: 450px;
+    animation: expansãoBarra 1.5s ease;
+}
+
+@keyframes expansãoBarra {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 450px;
+    }
+}

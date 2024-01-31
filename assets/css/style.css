@@ -144,13 +144,13 @@ body > nav > ul > li:nth-child(3) {
 }
 
 .titulo > h1 {
-  width: 280px; /*!Correção de width aqui*/
+  width: 950px; /*!Correção de width aqui*/
   padding-left: 30px;
   font-size: 28px;
 }
 
 .titulo > div {
-  width: 100px;
+  width: 100%;
   height: 3px;
   background-color: black;
 }

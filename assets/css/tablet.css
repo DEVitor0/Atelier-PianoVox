@@ -53,19 +53,20 @@ nav > div:nth-child(1n) > img {
 }
 
 .titulo {
-    height: 80px; /*!Ajustar altura mais tarde*/
+    height: 80px;
+    flex-direction: column;
 }
 
 .titulo > h1 {
     width: 100%;
     padding-left: 0;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 }
 
 .titulo > div {
-    margin: auto;
-    width: 450px;
+    margin: 3px auto;
+    width: 500px;
     animation: expansãoBarra 1.5s ease;
 }
 
@@ -74,7 +75,7 @@ nav > div:nth-child(1n) > img {
         width: 0;
     }
     100% {
-        width: 450px;
+        width: 500px;
     }
 }
 

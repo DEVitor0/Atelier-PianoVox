@@ -53,7 +53,7 @@ nav > div:nth-child(1n) > img {
 }
 
 .titulo {
-    height: 130px; /*!Ajustar altura mais tarde*/
+    height: 80px; /*!Ajustar altura mais tarde*/
 }
 
 .titulo > h1 {
@@ -76,4 +76,14 @@ nav > div:nth-child(1n) > img {
     100% {
         width: 450px;
     }
+}
+
+.carousel {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 10px; 
+}
+
+.arrow {
+    display: none;
 }

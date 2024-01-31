@@ -162,7 +162,6 @@ body > nav > ul > li:nth-child(3) {
 
 .carousel {
   display: flex;
-  transition: transform 0.5s ease-in-out;
 }
 
 .slide {

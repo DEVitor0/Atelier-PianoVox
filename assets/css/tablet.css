@@ -87,3 +87,12 @@ nav > div:nth-child(1n) > img {
 .arrow {
     display: none;
 }
+
+.container-professores {
+    justify-content: space-evenly;
+}
+
+.professor {
+    width: 30%;
+    max-width: 219px;
+}

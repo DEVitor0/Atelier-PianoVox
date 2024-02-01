@@ -9,7 +9,7 @@ nav > div:nth-child(1n) {
     background-position: center;
     background-size: cover;
     border-radius: 10px;
-    margin-left: 5px;
+    margin: auto;
 }
 
 nav > div:nth-child(1n) > img {

@@ -66,3 +66,36 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+//! Script para a versão de tablet abaixo
+
+function executeScriptBasedOnScreenWidth() {
+    const windowWidth = window.innerWidth;
+  
+    if (windowWidth >= 729 && windowWidth <= 992) {
+      const div = document.querySelector("section > div:nth-child(1) > div");
+  
+      div.style.display = 'none';
+  
+      setTimeout(function () {
+        div.style.display = 'block';
+
+        const styleSheet = document.styleSheets[0];
+        const keyframes = `@keyframes expansãoBarra {
+          0% { width: 0; }
+          100% { width: 500px; }
+        }`;
+  
+        styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
+        div.style.animationName = "expansãoBarra";
+        div.style.animationDuration = "1.5s";
+        div.style.animationTimingFunction = "ease";
+      }, 2000);
+    }
+  }
+  
+  window.onload = function() {
+    executeScriptBasedOnScreenWidth();
+    window.addEventListener('resize', executeScriptBasedOnScreenWidth);
+  };
+  

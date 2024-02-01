@@ -67,7 +67,6 @@ nav > div:nth-child(1n) > img {
 .titulo > div {
     margin: 3px auto;
     width: 500px;
-    animation: expansãoBarra 1.5s ease;
 }
 
 @keyframes expansãoBarra {
@@ -81,7 +80,7 @@ nav > div:nth-child(1n) > img {
 
 .carousel {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
     gap: 10px; 
 }
 

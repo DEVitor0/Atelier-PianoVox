@@ -68,8 +68,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 50px; /*!Problema de CSS no menu aqui*/
-  height: 40px; /*!Problema de CSS no menu aqui*/
+  width: 50px; 
+  height: 40px; 
   background: transparent;
   border: none;
   cursor: pointer;
@@ -144,7 +144,7 @@ body > nav > ul > li:nth-child(3) {
 }
 
 .titulo > h1 {
-  width: 950px; /*!Correção de width aqui*/
+  width: 950px;
   padding-left: 30px;
   font-size: 28px;
 }

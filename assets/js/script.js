@@ -73,11 +73,14 @@ function scriptWidth() {
     const windowWidth = window.innerWidth;
     const windowHeight = window.innerHeight;
 
+    const mobileNav = document.querySelector(".mobile-nav");
+    const imagem = document.querySelector("header");
+
     if (windowWidth > windowHeight && windowHeight > 250) {
-        const mobileNav = document.querySelector(".mobile-nav");
-        const imagem = document.querySelector("header")
-        imagem.style.height = '350px'
         mobileNav.style.height = '60px';
+        imagem.style.height = '350px';
+    } else {
+        imagem.style.height = ''; 
     }
 
     if (windowWidth >= 600 && windowWidth <= 992) {

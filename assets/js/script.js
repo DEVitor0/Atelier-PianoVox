@@ -75,6 +75,8 @@ function scriptWidth() {
 
     if (windowWidth > windowHeight && windowHeight > 250) {
         const mobileNav = document.querySelector(".mobile-nav");
+        const imagem = document.querySelector("header")
+        imagem.style.height = '350px'
         mobileNav.style.height = '60px';
     }
 

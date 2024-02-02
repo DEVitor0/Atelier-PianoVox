@@ -76,14 +76,14 @@ function scriptWidth() {
     const mobileNav = document.querySelector(".mobile-nav");
     const imagem = document.querySelector("header");
 
-    if (windowWidth > windowHeight && windowHeight > 250) {
+    if (windowWidth > windowHeight && windowHeight > 200 && windowHeight < 400) {
         mobileNav.style.height = '60px';
         imagem.style.height = '350px';
     } else {
         imagem.style.height = ''; 
     }
 
-    if (windowWidth >= 600 && windowWidth <= 992) {
+    if (windowWidth >= 600) {
         const div = document.querySelector("section > div:nth-child(1) > div");
 
         div.style.display = 'none';

@@ -1,3 +1,20 @@
-body {
-    background-color: red;
+header {
+    height: 79vh;
+}
+
+.menu-list {
+    height: 90%;
+}
+
+.container-professores {
+    justify-content: center;
+    gap: 15%;
+}
+
+footer {
+    justify-content: center;
+}
+
+footer > div:nth-child(3) {
+    width: 150px;
 }

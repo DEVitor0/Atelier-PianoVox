@@ -11,28 +11,28 @@ document.addEventListener("DOMContentLoaded", function () {
     const prevButton = document.getElementById("prev");
     const nextButton = document.getElementById("next");
 
-
     function showNextSlide() {
-        const firstSlide = carousel.firstElementChild;
-        carousel.appendChild(firstSlide);
+        const slides = document.querySelectorAll(".slide");
+        const lastSlide = slides[slides.length - 1];
+        const clonedSlide = lastSlide.cloneNode(true);
+        carousel.insertBefore(clonedSlide, slides[0]);
+        carousel.removeChild(lastSlide);
     }
-
 
     function showPrevSlide() {
-        const lastSlide = carousel.lastElementChild;
-        carousel.insertBefore(lastSlide, carousel.firstElementChild);
+        const slides = document.querySelectorAll(".slide");
+        const firstSlide = slides[0];
+        const clonedSlide = firstSlide.cloneNode(true);
+        carousel.appendChild(clonedSlide);
+        carousel.removeChild(firstSlide);
     }
 
+    prevButton.addEventListener("click", showPrevSlide);
 
-    prevButton.addEventListener("click", function () {
-        showPrevSlide();
-    });
-
-
-    nextButton.addEventListener("click", function () {
-        showNextSlide();
-    });
+    nextButton.addEventListener("click", showNextSlide);
 });
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
     const menuItems = document.querySelectorAll('.menu-list li');

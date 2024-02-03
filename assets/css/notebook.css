@@ -7,6 +7,10 @@ header {
     height: 50px;
 }
 
+.menu-list {
+    height: 90%;
+}
+
 nav > div:nth-child(1n) {
     height: 90%;
 }

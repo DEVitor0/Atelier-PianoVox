@@ -52,11 +52,18 @@ document.addEventListener('DOMContentLoaded', function () {
             const navHeight = document.querySelector('header').offsetHeight;
 
             let extraOffset = 0;
-
-            if (index === 2) { 
-                extraOffset = -400; 
+            if (index === 1) {
+                extraOffset = -320
+            } else if (index === 2) { 
+                extraOffset = -500; 
             } else if (index === 3) { 
-                extraOffset = window.innerHeight = -600;
+                extraOffset = window.innerHeight = -1000;
+            }
+
+            if (window.innerWidth > 600 && window.innerWidth <= 991) {
+                if (index === 1) {
+                    extraOffset = -590;
+                }
             }
 
             window.scrollTo({
@@ -76,7 +83,7 @@ function scriptWidth() {
     const mobileNav = document.querySelector(".mobile-nav");
     const imagem = document.querySelector("header");
 
-    if (windowWidth > windowHeight && windowHeight > 200 && windowHeight < 400) {
+    if (windowWidth > windowHeight && windowHeight > 200 && windowHeight < 470) {
         mobileNav.style.height = '60px';
         imagem.style.height = '350px';
     } else {

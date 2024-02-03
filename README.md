@@ -13,7 +13,7 @@ O Atelier PianoVox é um site desenvolvido para a empresa PianoVox, dedicado à 
 ## Funcionalidades Principais
 
 - **CSS responsivo** Permite com que o usuário consuma o mesmo conteúdo em diferentes dispositivos.
-- **Carrossel:** O usuário pode interagir dinâmicamente com este efeito para conhecer características sobre o ensino.
+- **Carrossel:** O usuário pode interagir dinâmicamente com este efeito para conhecer características sobre o ensino. (disponível apenas na versão de celular)
 - **Funcionalidade de Rolagem Responsiva:** O script adiciona uma funcionalidade de rolagem suave ao clicar nos itens do menu. Além disso, ajusta automaticamente as medidas de rolagem com base na largura da tela, proporcionando uma experiência de usuário otimizada em dispositivos com diferentes tamanhos de tela.
 
 ## Tecnologias Utilizadas
